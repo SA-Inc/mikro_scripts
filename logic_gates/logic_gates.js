@@ -12,7 +12,7 @@ module.exports.or = (a, b) => a || b;
 module.exports.not = (a) => !a;
 module.exports.nand = (a, b) => !(a && b);
 module.exports.nor = (a, b) => !(a || b);
-module.exports.xor = (a, b) => (!(a && b) && (a || b));
+module.exports.xor = (a, b) => !(a && b) && (a || b);
 module.exports.xnor = (a, b) => !(!(a && b) && (a || b));
 module.exports.imp = (a, b) => !a || b;
 module.exports.nimp = (a, b) => a && !b;
